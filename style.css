@@ -1,0 +1,99 @@
+/* Theme Name: Eduardo
+Author: Eduardo
+Author URI: https://github.com/ZeEdu */
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 520px;
+  padding: 0 16px;
+}
+
+#home {
+  background-color: #6c63ff;
+}
+
+#home .container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#home .home__text {
+  margin-bottom: 56px;
+  color: #fff;
+  text-align: center;
+}
+#home .home__text .home__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+#home .home__text .home__paragraph {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+#home .home__imageWrapper {
+  margin-bottom: 3.5rem;
+  max-height: 18.75rem;
+}
+
+#home .home__button {
+  width: 15.625rem;
+  background-color: #fff;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 3.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  /* font-family: "Nunito", sans-serif; */
+  display: flex;
+  justify-content: center;
+}
+
+#home .home__button:hover {
+  background-color: #f0efff;
+  box-shadow: #7b73ff 0px 0px 0px 3px;
+}
+
+#home .home__button span {
+  margin-left: 1rem;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 520px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 920px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1120px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
