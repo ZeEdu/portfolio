@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/849d82b643.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/reset.css " />
+    <link rel="stylesheet" href="/style.css " />
+    <title>Edu Siqueira</title>
+  </head>
+
+  <body>
+    <!-- <header>
+		<nav class="nav">
+			<a class="nav__brand" href="#">edu siqueira</a>
+			<ul class="nav__menu">
+				<li class="nav__menuItem">inicio</li>
+				<li class="nav__menuItem">serviços</li>
+				<li class="nav__menuItem">contato</li>
+				<li class="nav__menuItem">blog</li>
+			</ul>
+		</nav>
+	</header> -->
+    <section id="home">
+      <div class="container">
+        <div class="home__imageWrapper">
+          <img src="/img/developer_activity.svg" alt="Image Placeholder" />
+        </div>
+        <article class="home__text">
+          <h1 class="home__title">Olá, eu sou o Eduardo</h1>
+          <p class="home__paragraph">Estou pronto para criar o seu novo site</p>
+          <a class="home__button" href="#servicos">
+            <i class="fas fa-chevron-right"></i>
+            <span>Conheça os meus serviços</span>
+          </a>
+        </article>
+      </div>
+    </section>
+    <section id="servicos">
+      <div class="container">
+        <h1 class="title">servicos</h1>
+        <div class="servicos__wrapper">
+          <div class="servico">
+            <div class="servico__imageWrapper">
+              <img src="/img/responsive.svg" alt="image placeholder" />
+            </div>
+            <div class="servico__info">
+              <h2 class="servico__title">criação de sites</h2>
+              <p class="servico__text">
+                Sites rápidos e dinâmicos que funcionam em qualquer tela
+              </p>
+            </div>
+          </div>
+          <div class="servico">
+            <div class="servico__imageWrapper">
+              <img src="/img/wordpress.svg" alt="image placeholder" />
+            </div>
+            <div class="servico__info">
+              <h2 class="servico__title">wordpress</h2>
+              <p class="servico__text">
+                Tenha total controle sobre o seu conteúdo com o principal CMS do
+                mercado
+              </p>
+            </div>
+          </div>
+          <div class="servico">
+            <div class="servico__imageWrapper">
+              <img src="/img/web_shopping.svg" alt="image placeholder" />
+            </div>
+            <div class="servico__info">
+              <h2 class="servico__title">loja online</h2>
+              <p class="servico__text">
+                Venda seu produto online. Com pagamento seguro, opções de
+                entrega e muito mais
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contato">
+      <div class="container">
+        <h1 class="title">contato</h1>
+        <div class="contato">
+          <div class="contato__imageWrapper">
+            <img
+              src="https://via.placeholder.com/520x270"
+              alt="image placeholder"
+            />
+          </div>
+          <div class="contato__form">
+            <form class="form">
+              <div class="field">
+                <label class="field__label" for="email"> email </label>
+                <input
+                  class="field__input"
+                  type="email"
+                  name="email"
+                  id="email"
+                />
+              </div>
+              <div class="field">
+                <label class="field__label" for="assunto"> assunto </label>
+                <input
+                  class="field__input"
+                  type="text"
+                  name="assunto"
+                  id="assunto"
+                />
+              </div>
+              <div class="field">
+                <label class="field__label" for="mensagem"> mensagem </label>
+                <textarea
+                  class="field__input"
+                  name="mensagem"
+                  id="mensagem"
+                  rows="4"
+                ></textarea>
+              </div>
+              <button class="btn" type="submit">enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

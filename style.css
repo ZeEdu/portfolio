@@ -7,12 +7,24 @@ body {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
   max-width: 520px;
   padding: 0 16px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin: 0 auto;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 32px;
 }
 
 #home {
@@ -40,6 +52,7 @@ img {
 #home .home__text .home__paragraph {
   font-size: 1rem;
   font-weight: normal;
+  margin-bottom: 1rem;
 }
 
 #home .home__imageWrapper {
@@ -48,24 +61,112 @@ img {
 }
 
 #home .home__button {
-  width: 15.625rem;
+  /* width: 15.625rem; */
   background-color: #fff;
   padding: 0.75rem 1.25rem;
   margin-bottom: 3.5rem;
+  border: 1px solid #fff;
   border-radius: 5px;
   text-decoration: none;
-  /* font-family: "Nunito", sans-serif; */
   display: flex;
   justify-content: center;
+  transition: 0.3s;
 }
 
 #home .home__button:hover {
-  background-color: #f0efff;
-  box-shadow: #7b73ff 0px 0px 0px 3px;
+  background-color: #6c63ff;
+  color: #fff;
 }
 
 #home .home__button span {
   margin-left: 1rem;
+}
+
+/* #servicos */
+
+#servicos {
+  margin-top: 2rem;
+}
+
+.servico {
+  margin-bottom: 32px;
+}
+
+.servicos__wrapper {
+  margin-bottom: 56px;
+}
+
+.servico .servico__imageWrapper {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-height: 240px;
+}
+
+.servico .servico__info {
+  text-align: center;
+}
+
+.servico .servico__info .servico__title {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1.125rem;
+  color: #000;
+  margin-bottom: 0.75rem;
+}
+
+/* #contato */
+.contato .contato__imageWrapper {
+  display: none;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+.field .field__label {
+  margin-bottom: 12px;
+  text-transform: capitalize;
+  color: #000;
+  font-weight: normal;
+  font-size: 1.125rem;
+  display: block;
+}
+
+.field .field__input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  resize: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 3px solid #000;
+  transition: 0.3s;
+}
+
+.field .field__input:focus {
+  outline: solid 3px #6c63ff;
+  border: 3px solid #fff;
+}
+
+.btn {
+  background-color: #6c63ff;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 3.5rem;
+  border: 1px solid #6c63ff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+.btn:hover {
+  color: #6c63ff;
+  background-color: #fff;
 }
 
 @media (min-width: 576px) {
