@@ -7,7 +7,8 @@ body {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 400px;
   height: auto;
 }
 
@@ -24,14 +25,14 @@ img {
   font-size: 1.5rem;
   font-weight: normal;
   text-transform: uppercase;
-  margin-bottom: 32px;
+  margin-bottom: 4rem;
 }
 
 #home {
   background-color: #6c63ff;
 }
 
-#home .container {
+#home .home {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -61,9 +62,10 @@ img {
 }
 
 #home .home__button {
-  /* width: 15.625rem; */
+  width: 15.625rem;
   background-color: #fff;
   padding: 0.75rem 1.25rem;
+  margin: 0 auto;
   margin-bottom: 3.5rem;
   border: 1px solid #fff;
   border-radius: 5px;
@@ -85,7 +87,7 @@ img {
 /* #servicos */
 
 #servicos {
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 
 .servico {
@@ -93,13 +95,22 @@ img {
 }
 
 .servicos__wrapper {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 56px;
 }
 
 .servico .servico__imageWrapper {
   margin-bottom: 1.5rem;
-  width: 100%;
-  max-height: 240px;
+  /* width: 100%;
+  max-height: 240px; */
+  text-align: center;
+}
+
+.servico .servico__imageWrapper img {
+  width: auto;
+  max-height: 220px;
+  height: 100%;
 }
 
 .servico .servico__info {
@@ -115,6 +126,10 @@ img {
 }
 
 /* #contato */
+#contato {
+  padding-top: 2rem;
+}
+
 .contato .contato__imageWrapper {
   display: none;
 }
@@ -169,6 +184,20 @@ img {
   background-color: #fff;
 }
 
+footer {
+  height: 10rem;
+  background-color: #6c63ff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  color: #fff;
+  font-family: 0.6875rem;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 520px;
@@ -184,6 +213,42 @@ img {
 @media (min-width: 992px) {
   .container {
     max-width: 920px;
+  }
+
+  #home .home {
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #home .home__text {
+    text-align: left;
+    margin-left: 2rem;
+  }
+
+  #servicos .servicos__wrapper {
+    flex-direction: row;
+  }
+
+  #servicos .servicos__wrapper .servico {
+    margin: 0.75rem;
+    /* max-width: 300px; */
+  }
+
+  #contato .contato {
+    display: flex;
+  }
+  #contato .contato > * {
+    flex: 1;
+  }
+
+  #contato .contato .contato__imageWrapper {
+    display: block;
+  }
+
+  #servicos,
+  #contato {
+    padding-top: 7.5rem;
   }
 }
 
